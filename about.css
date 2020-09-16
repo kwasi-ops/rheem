@@ -1,0 +1,21 @@
+body{
+	margin: 0px;
+	background-color: grey;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:40px;
+	padding:20px;
+	no
+	
+}
+.art{
+	text-align:left;
+	background-image:url("s.jpg");
+	height: 150%;
+}
+.para{
+	color: black;
+	text-align: left;
+	font-family: Algerian;
+	font-size: 55%;
+	
+}

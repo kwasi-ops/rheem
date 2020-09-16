@@ -1,0 +1,68 @@
+<!DOCTYPEhtml>
+<html>
+<body>
+<link rel="stylesheet" href="services.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-bar w3-grey width=20% heigh=10%">
+  <a href="index.html" class="w3-button">Home</a>
+  <a href="about.html"class="w3-button">About</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Menu</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="contact.html" class="w3-bar-item w3-button">Contact us</a>
+      <a href="services.html" class="#">Services</a>
+      <a href="order.html" class="w3-bar-item w3-button">Order</a>
+    </div>
+  </div>
+<
+<P>Order now!</p>
+</div>
+<nav>
+<class=branding>
+<button  class="w3-button" "w3-text-align right" "w3-color white" onClick="myFunction()">Order now</button>
+<div class="w3-content w3-section" style="max-width:300px">
+  <h2> <b> SHOP AT 3K </b></h2>
+
+  <img class="mySlides w3-animate-animate" src="vasachi.jpg" style="width:140%">
+  <img class="mySlides w3-animate-animate" src="fendi.jpg" style="width:140%">
+  <img class="mySlides w3-animate-fading" src="airmax.jpg" style="width:140%">
+  <img class="mySlides w3-animate-fading" src="fila.jpg" style="width:140%">
+  <img class="mySlides w3-animate-fading" src="fasho.jpg" style="width:140%">
+  <img class="mySlides w3-animate-fading" src="s.jpg" style="width:140%">
+  <img class="mySlides w3-animate-fading" src="nike.jpg" style="width:140%">
+  <img class="mySlides w3-animate-fading" src="adidas.jpg" style="width:140%">
+</div>
+</nav>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+</script>
+
+
+
+
+<script>
+function myFunction() {
+   var email = prompt("Enter your email");
+   if (email != null){
+     document.getElementById("order").innerHTML =
+	 "Hello " + email + "! Order made!";
+	 }
+	 }
+	 </script>
+	 </body>
+	 </html>
+	 
